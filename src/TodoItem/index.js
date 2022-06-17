@@ -1,5 +1,6 @@
 import React from "react";
-import './TodoItem.css'
+import './TodoItem.css';
+
 
 function TodoItem(props) {
 
@@ -16,7 +17,7 @@ function TodoItem(props) {
             className="Icon Icon-delete"
             onClick={props.onDelete}
             >
-                🗑️
+                
             </span>
         </li>
     )
