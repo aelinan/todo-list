@@ -1,11 +1,11 @@
 .sectionList {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
   
-  ul {
-      margin: 0;
-      padding: 0 0 56px 0;
-      list-style: none;
-    }
+ul {
+  margin: 0;
+  padding: 0 0 56px 0;
+  list-style: none;
+}
   

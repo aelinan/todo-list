@@ -1,13 +1,11 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import './TodoForm.css'
 
-function TodoForm () {
+function TodoForm ({
+    addTodo,
+    setOpenModal,
+    }) {
     const [newTodoValue, setNewTodoValue] = React.useState('')
-    const {
-        addTodo,
-        setOpenModal,
-    } = React.useContext(TodoContext)
 
     const onChange = (e) => {
         setNewTodoValue(e.target.value)
@@ -17,13 +15,15 @@ function TodoForm () {
         setOpenModal(false);
     }
     const onAdd = (e) => {
-        e.preventDefault();
+        if (!newTodoValue) {
+            return e.preventDefault();
+        }
         addTodo(newTodoValue);
         setOpenModal(false);
     }
     return (
         <form onSubmit={onAdd}>
-            <label>...</label>
+            {/* <label>...</label> */}
             <textarea 
                 value={newTodoValue}
                 onChange={onChange}
