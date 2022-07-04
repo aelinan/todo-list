@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 35px);
+    width: calc(100% - 15px);
     margin-top: 24px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
 }
@@ -41,11 +41,16 @@
   .Icon-check--active {
     color: #4caf50;
   }
+  .Icon-check--inactive {
+    color: #000000;
+  }
   
   .Icon-delete {
-    position: absolute;
+    /* position: absolute;
     top: -24px;
-    right: 0;
+    right: 0; */
+    display: flex;
+    justify-content: space-between;
   }
 
   .Icon-delete:hover{

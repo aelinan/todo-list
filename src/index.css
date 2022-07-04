@@ -12,5 +12,13 @@ body {
 #root {
   margin: 0 24px;
   position: relative;
-  min-height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  /* min-height: 100vh; */
+
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center; */
+  max-width: 380px;
 }
