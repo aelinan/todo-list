@@ -12,7 +12,7 @@ import { TodoLoading } from '../TodoLoading';
 import { TodoCreate } from "../TodoCreate";
 import { TodoError } from "../TodoError";
 import { onEmptySearchResults } from '../onEmptySearchResults';
-import { ChangeAlert, ChangeAlertWithStorageListener } from '../ChangeAlert';
+import { ChangeAlert } from '../ChangeAlert';
 
 
 
@@ -88,7 +88,7 @@ function App() {
         <CreateTodoButton 
             setOpenModal={setOpenModal}
         />
-        <ChangeAlertWithStorageListener sincronize={sincronizeTodos}/>  
+        <ChangeAlert sincronize={sincronizeTodos}/>  
     </React.Fragment>
   );
 }
