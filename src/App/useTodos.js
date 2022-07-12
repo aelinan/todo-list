@@ -24,10 +24,10 @@ function useTodos () {
         searchedTodos = todos;
       } else {
         searchedTodos = todos.filter(todo => {
-          const todoText = todo.text.toLowerCase()
+          const todoText = todo.text.toLowerCase();
           const searchText = searchValue.toLowerCase();
           return todoText.includes(searchText);
-        })
+        });
       }
     
       const addTodo = (text) => {
